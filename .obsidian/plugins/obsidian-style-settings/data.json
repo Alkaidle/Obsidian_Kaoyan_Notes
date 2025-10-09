@@ -1,3 +1,6 @@
 {
-  "minimal-style@@bold-color@@light": "#FF7F00"
+  "minimal-style@@italic-color@@light": "#FF7F00",
+  "minimal-style@@bold-color@@light": "#1AA3A0",
+  "minimal-style@@p-spacing": "1.8rem",
+  "minimal-style@@bold-modifier": 200
 }
