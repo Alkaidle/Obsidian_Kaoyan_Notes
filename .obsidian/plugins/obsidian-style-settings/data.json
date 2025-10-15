@@ -5,5 +5,6 @@
   "minimal-style@@h2-size": "1.8em",
   "minimal-style@@h3-size": "1.6em",
   "minimal-style@@h4-size": "1.35em",
-  "minimal-style@@h5-size": "1.3em"
+  "minimal-style@@h5-size": "1.3em",
+  "minimal-style@@bold-color@@light": "#537E92"
 }
