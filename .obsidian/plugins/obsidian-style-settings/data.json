@@ -10,9 +10,13 @@
   "minimal-style@@hl2@@light": "#FFF1B0",
   "minimal-style@@table-lines": true,
   "minimal-style@@row-hover": false,
-  "minimal-style@@row-lines": true,
-  "minimal-style@@col-lines": true,
+  "minimal-style@@row-lines": false,
+  "minimal-style@@col-lines": false,
   "minimal-style@@table-column-min-width": "9ch",
-  "minimal-style@@table-tabular": true,
-  "minimal-style@@table-text-size": "1.1em"
+  "minimal-style@@table-tabular": false,
+  "minimal-style@@table-text-size": "1.01em",
+  "minimal-style@@row-alt": false,
+  "minimal-style@@col-alt": false,
+  "minimal-style@@table-center": true,
+  "minimal-style@@table-nowrap": true
 }
