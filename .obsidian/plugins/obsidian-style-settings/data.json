@@ -7,5 +7,12 @@
   "minimal-style@@h4-size": "1.35em",
   "minimal-style@@h5-size": "1.3em",
   "minimal-style@@bold-color@@light": "#CB482A",
-  "minimal-style@@hl2@@light": "#FFF1B0"
+  "minimal-style@@hl2@@light": "#FFF1B0",
+  "minimal-style@@table-lines": true,
+  "minimal-style@@row-hover": false,
+  "minimal-style@@row-lines": true,
+  "minimal-style@@col-lines": true,
+  "minimal-style@@table-column-min-width": "9ch",
+  "minimal-style@@table-tabular": true,
+  "minimal-style@@table-text-size": "1.1em"
 }
