@@ -97,5 +97,13 @@
       ],
       "key": ","
     }
+  ],
+  "editing-toolbar:下划线": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "U"
+    }
   ]
 }
