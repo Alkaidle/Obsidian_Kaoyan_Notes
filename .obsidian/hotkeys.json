@@ -105,5 +105,14 @@
       ],
       "key": "U"
     }
+  ],
+  "editor:delete-paragraph": [],
+  "editing-toolbar:remove-blank-lines": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "D"
+    }
   ]
 }
