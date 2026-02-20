@@ -1,1 +1,5 @@
 - “如果 `personId` 的地址不在 `Address` 表中，则报告为 `null`” → 主表为`personId`，左连接
+- <u>如何查找第N高的数据</u>
+	- `limit n` 返回前n条数据
+	- `offset n` 跳过n条语句
+	- 判断空值：`ifnull(a,b)` 如果非空返回a，否则b
