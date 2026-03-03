@@ -2,4 +2,5 @@
 - <u>如何查找第N高的数据</u>
 	- `limit n` 返回前n条数据
 	- `offset n` 跳过n条语句
+	- 等价于 `limit offset, size`
 	- 判断空值：`ifnull(a,b)` 如果a非空返回a，否则返回b
