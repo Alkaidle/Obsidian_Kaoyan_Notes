@@ -4,3 +4,8 @@
 	- `offset n` 跳过n条语句
 	- 等价于 `limit offset, size`
 	- 判断空值：`ifnull(a,b)` 如果a非空返回a，否则返回b
+- <u>排名</u>
+	- `RANK() OVER (ORDER BY 列)`
+	- `RANK()` 会跳号：1,2,2,4	
+	- `DENSE_RANK()` 不会跳号：1,2,2,3
+	- `ROW_NUMBER()` 不允许并列：1,2,3,4
