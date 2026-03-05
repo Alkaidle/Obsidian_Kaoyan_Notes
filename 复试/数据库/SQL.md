@@ -1,3 +1,4 @@
+- `WHERE` 过滤行，不可使用聚合函数，`GROUP BY` 前；`HAVING` 过滤组，可使用聚合函数，`GROUP BY` 后
 - “如果 `personId` 的地址不在 `Address` 表中，则报告为 `null`” → 主表为`personId`，左连接
 - <u>如何查找第N高的数据</u>
 	- `limit n` 返回前n条数据
