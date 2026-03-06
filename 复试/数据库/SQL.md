@@ -13,3 +13,5 @@
 	- `DENSE_RANK()` 不会跳号：1,2,2,3
 	- `ROW_NUMBER()` 不允许并列：1,2,3,4
 	- **注意**：窗口函数 只能在 select 或者 order by 后面
+- <u>增加日期/时间</u>
+	- `DATE_ADD(date, INTERVAL 1 DAY/MONTH/HOUR)`
