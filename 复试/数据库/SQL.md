@@ -22,3 +22,8 @@
 	- `>1`
 	- 存在 id不同且相等
 
+```sql
+select s.name
+from Reaserves r join Boats b on r.bid=b.bid, Sailors s
+where 
+```
