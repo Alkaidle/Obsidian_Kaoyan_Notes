@@ -15,3 +15,9 @@
 	- **注意**：窗口函数 只能在 select 或者 order by 后面
 - <u>增加日期/时间</u>
 	- `DATE_ADD(date, INTERVAL 1 DAY/MONTH/HOUR)`
+- <u>唯一</u>
+	- `count(*) over (partition over...)=1`
+	- 不存在 id不同且相等
+- <u>不唯一</u>
+	- `>1`
+	- 存在 id不同且相等
