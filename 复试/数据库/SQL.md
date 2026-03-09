@@ -7,6 +7,13 @@ UPDATE tablename SET col1=..., col2=... WHERE ...
 -- 删除
 DELETE FROM tablename WHERE col1=... 
 ```
+#### 字符串
+```sql
+-- sub在str中第一次出现的位置, 没有则0
+locate(sub, str) 
+instr(str, sub)
+like/ not like “%sub%”
+```
 - `WHERE` 过滤行，不可使用聚合函数，`GROUP BY` 前；`HAVING` 过滤组，可使用聚合函数，`GROUP BY` 后
 - `from (select ...) t` 必须有别名
 - “如果 `personId` 的地址不在 `Address` 表中，则报告为 `null`” → 主表为`personId`，左连接
