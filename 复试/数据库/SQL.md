@@ -1,3 +1,12 @@
+#### 数据操作
+```sql
+-- 插入
+INSERT INTO tablename (col1, col2) VALUES (val1, val2);
+-- 更新
+UPDATE tablename SET col1=..., col2=... WHERE ...
+-- 删除
+DELETE FROM tablename WHERE col1=... 
+```
 - `WHERE` 过滤行，不可使用聚合函数，`GROUP BY` 前；`HAVING` 过滤组，可使用聚合函数，`GROUP BY` 后
 - `from (select ...) t` 必须有别名
 - “如果 `personId` 的地址不在 `Address` 表中，则报告为 `null`” → 主表为`personId`，左连接
@@ -21,9 +30,3 @@
 - <u>不唯一</u>
 	- `>1`
 	- 存在 id不同且相等
-
-```sql
-select s.name
-from Reaserves r join Boats b on r.bid=b.bid, Sailors s
-where 
-```
