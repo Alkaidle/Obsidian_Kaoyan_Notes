@@ -1,3 +1,21 @@
+#### 表操作
+```c
+CREATE TABLE
+[IF NOT EXISTS] tb_name -- 不存在才创建，存在就跳过
+(column_name1 data_type1 -- 列名和类型必选
+  [ PRIMARY KEY -- 可选的约束，主键
+   | FOREIGN KEY -- 外键，引用其他表的键值
+   | AUTO_INCREMENT -- 自增ID
+   | COMMENT comment -- 列注释（评论）
+   | DEFAULT default_value -- 默认值
+   | UNIQUE -- 唯一性约束，不允许两条记录该列值相同
+   | NOT NULL -- 该列非空
+  ], ...
+) [CHARACTER SET charset] -- 字符集编码
+[COLLATE collate_value] -- 列排序和比较时的规则（是否区分大小写等）
+```
+从另一张表复制表结构创建表： `CREATE TABLE tb_name LIKE tb_name_old`
+从另一张表的查询结果创建表： `CREATE TABLE tb_name AS SELECT * FROM tb_name_old WHERE options`
 #### 数据操作
 ```mysql
 -- 插入
