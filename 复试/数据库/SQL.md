@@ -7,6 +7,8 @@ REPLACE INTO 若存在则先删除
 UPDATE tablename SET col1=..., col2=... WHERE ...
 -- 删除
 DELETE FROM tablename WHERE col1=... 
+-- 不改变结构，仅删除内容
+TRUNCATE tb_name
 ```
 #### 字符串
 ```sql
