@@ -1,7 +1,8 @@
 #### 数据操作
-```sql
+```mysql
 -- 插入
 INSERT INTO tablename (col1, col2) VALUES (val1, val2);
+REPLACE INTO 若存在则先删除
 -- 更新
 UPDATE tablename SET col1=..., col2=... WHERE ...
 -- 删除
