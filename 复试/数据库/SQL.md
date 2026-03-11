@@ -38,3 +38,6 @@ like/ not like “%sub%”
 - <u>不唯一</u>
 	- `>1`
 	- 存在 id不同且相等
+#### 日期
+`DATEDIFF(date1, date2)` 返回天数，忽略时间，只比较日期
+`TIMESTAMPDIFF(interval, time1, time2)`  interval 可以是不同的时间单位
