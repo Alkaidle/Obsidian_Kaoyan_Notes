@@ -19,5 +19,6 @@
   "minimal-style@@table-center": true,
   "minimal-style@@table-nowrap": true,
   "minimal-style@@h1-size": "1.6em",
-  "minimal-style@@bold-color@@light": "#3A3A3A"
+  "minimal-style@@bold-color@@light": "#3A3A3A",
+  "minimal-style@@bold-color@@dark": "#FFFFFF"
 }
