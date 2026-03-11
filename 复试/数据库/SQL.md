@@ -16,6 +16,17 @@ CREATE TABLE
 ```
 从另一张表复制表结构创建表： `CREATE TABLE tb_name LIKE tb_name_old`
 从另一张表的查询结果创建表： `CREATE TABLE tb_name AS SELECT * FROM tb_name_old WHERE options`
+```mysql
+ALTER TABLE 表名 { ADD COLUMN <列名> <类型> [after colname]  -- 增加列
+     | CHANGE COLUMN <旧列名> <新列名> <新列类型> -- 修改列名或类型
+     | ALTER COLUMN <列名> { SET DEFAULT <默认值> | DROP DEFAULT } -- 修改/删除列的默认值
+     | MODIFY COLUMN <列名> <类型> -- 修改列类型
+     | DROP COLUMN <列名> -- 删除列
+     | RENAME TO <新表名> -- 修改表名
+     | CHARACTER SET <字符集名> -- 修改字符集
+     | COLLATE <校对规则名> } -- 修改校对规则（比较和排序时用到）
+
+```
 #### 数据操作
 ```mysql
 -- 插入
