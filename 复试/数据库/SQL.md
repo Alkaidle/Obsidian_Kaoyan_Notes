@@ -97,6 +97,8 @@ date_format(time, "%Y%m%d") // 2021-09-02 -> 20210902
 
 //提取
 substr(date_format(time, "%Y%m%d"), 1, 6)
+
+//获取天数
 ```
 #### 查询
 ##### 截断平均值
