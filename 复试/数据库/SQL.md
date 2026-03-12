@@ -93,4 +93,5 @@ like/ not like “%sub%”
 ```mysql
 round((sum(score)-max(score)-min(score)) / (count(score)-2), 1)
 ```
-注意不能`count(*)`，因为会将`NULL`算入
+注意不能`count(*)`，因为会将`NULL`算入，`count(colname)`自动去除重复
+ 
