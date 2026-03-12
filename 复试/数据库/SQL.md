@@ -86,8 +86,18 @@ like/ not like “%sub%”
 	- `>1`
 	- 存在 id不同且相等
 #### 日期
-`DATEDIFF(date1, date2)` 返回天数，忽略时间，只比较日期
-`TIMESTAMPDIFF(interval, time1, time2)`  interval 可以是不同的时间单位
+```
+// 日期差
+DATEDIFF(date1, date2) 返回天数，忽略时间，只比较日期
+TIMESTAMPDIFF(interval, time1, time2)  interval 可以是不同的时间单位
+
+//转换格式
+date_format(time, "%Y%m%d") // 2021-09-02 -> 20210902
+"%M": 07 -> June
+
+//提取
+substr(date_format(time, "%Y%m%d"), 1, 6)
+```
 #### 查询
 ##### 截断平均值
 ```mysql
