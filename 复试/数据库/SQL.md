@@ -94,4 +94,17 @@ like/ not like “%sub%”
 round((sum(score)-max(score)-min(score)) / (count(score)-2), 1)
 ```
 注意不能`count(*)`，因为会将`NULL`算入，`count(colname)`自动去除重复
- 
+##### 去重组合统计
+**统计唯一组合**
+```mysql
+distinct (uid, date(submit_time)) -- MySQL支持
+
+-- 等价于
+select count(*)
+from (
+    select uid, date(submit_time)
+    from exam_record
+    group by uid, date(submit_time)
+) t
+``` 
+![[Pasted image 20260312195819.png]]
