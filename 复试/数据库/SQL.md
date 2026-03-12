@@ -18,7 +18,7 @@ CREATE TABLE
 从另一张表复制表结构创建表： `CREATE TABLE tb_name LIKE tb_name_old`
 从另一张表的查询结果创建表： `CREATE TABLE tb_name AS SELECT * FROM tb_name_old WHERE options`
 - 修改
-```mysql
+```c
 ALTER TABLE 表名 { ADD COLUMN <列名> <类型> [after colname]  -- 增加列
      | CHANGE COLUMN <旧列名> <新列名> <新列类型> -- 修改列名或类型
      | ALTER COLUMN <列名> { SET DEFAULT <默认值> | DROP DEFAULT } -- 修改/删除列的默认值
@@ -30,13 +30,18 @@ ALTER TABLE 表名 { ADD COLUMN <列名> <类型> [after colname]  -- 增加列
 
 ```
 - 索引
-```mysql
+```c
+-- 创建
 CREATE 
   [UNIQUE -- 唯一索引
   | FULLTEXT -- 全文索引
   ] INDEX index_name ON table_name -- 不指定唯一或全文时默认普通索引
   (column1[(length) [DESC|ASC]] [,column2,...]) -- 可以对多列建立组合索引  
 
+-- 删除
+DROP INDEX <索引名> ON <表名>
+
+-- 可用 ALTER 创建/删除
 ```
 #### 数据操作
 ```mysql
