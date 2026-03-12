@@ -1,4 +1,5 @@
 #### 表操作
+- 创建
 ```c
 CREATE TABLE
 [IF NOT EXISTS] tb_name -- 不存在才创建，存在就跳过
@@ -16,6 +17,7 @@ CREATE TABLE
 ```
 从另一张表复制表结构创建表： `CREATE TABLE tb_name LIKE tb_name_old`
 从另一张表的查询结果创建表： `CREATE TABLE tb_name AS SELECT * FROM tb_name_old WHERE options`
+- 修改
 ```mysql
 ALTER TABLE 表名 { ADD COLUMN <列名> <类型> [after colname]  -- 增加列
      | CHANGE COLUMN <旧列名> <新列名> <新列类型> -- 修改列名或类型
@@ -25,6 +27,15 @@ ALTER TABLE 表名 { ADD COLUMN <列名> <类型> [after colname]  -- 增加列
      | RENAME TO <新表名> -- 修改表名
      | CHARACTER SET <字符集名> -- 修改字符集
      | COLLATE <校对规则名> } -- 修改校对规则（比较和排序时用到）
+
+```
+- 索引
+```mysql
+CREATE 
+  [UNIQUE -- 唯一索引
+  | FULLTEXT -- 全文索引
+  ] INDEX index_name ON table_name -- 不指定唯一或全文时默认普通索引
+  (column1[(length) [DESC|ASC]] [,column2,...]) -- 可以对多列建立组合索引  
 
 ```
 #### 数据操作
