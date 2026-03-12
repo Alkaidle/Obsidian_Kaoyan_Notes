@@ -88,3 +88,9 @@ like/ not like “%sub%”
 #### 日期
 `DATEDIFF(date1, date2)` 返回天数，忽略时间，只比较日期
 `TIMESTAMPDIFF(interval, time1, time2)`  interval 可以是不同的时间单位
+#### 查询
+##### 截断平均值
+```mysql
+round((sum(score)-max(score)-min(score)) / (count(score)-2), 1)
+```
+注意不能`count(*)`，因为会将`NULL`算入
